@@ -13,6 +13,7 @@
     rgba(255, 255, 255, 0.514) 35px,
     rgba(255, 255, 255, 0.689) 70px
   );
+  user-select: none;
 }
 .joinButton {
   background-color: rgb(26, 144, 75);
@@ -54,6 +55,15 @@
     rgba(23, 96, 34, 1) 100%
   );
   cursor: pointer;
+  transition: background 0.4s ease-in-out;
+}
+.mole:hover {
+  background: radial-gradient(
+    circle,
+    rgb(87, 209, 62) 25%,
+    rgb(39, 125, 52) 81%,
+    rgba(23, 96, 34, 1) 100%
+  );
 }
 
 .not-mole {
