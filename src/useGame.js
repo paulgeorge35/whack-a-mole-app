@@ -13,7 +13,6 @@ const useGame = (socket) => {
     });
 
     const handleJoinGame = () => {
-        console.log(JSON.stringify(data, null, 2))
         socket.emit('joinGame', {});
     };
 
