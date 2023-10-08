@@ -2,10 +2,10 @@ import io from 'socket.io-client';
 import './App.css';
 import useGame from './useGame';
 
-const DEBUG = process.env.NODE_ENV === 'development';
-const API_URL = process.env.API_URL || 'http://localhost:5001';
+const DEBUG = process.env.REACT_APP_NODE_ENV === 'development';
+const REACT_APP_API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5001';
 
-const socket = io(API_URL, {
+const socket = io(REACT_APP_API_URL, {
   withCredentials: true,
   transports: ['websocket'],
 });
